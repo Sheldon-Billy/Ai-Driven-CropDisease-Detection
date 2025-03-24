@@ -1,21 +1,6 @@
 @import "tailwindcss";
-/* *{
-    font-family: 'Times New Roman', Times, serif;
-} */
-
-/* gradient text */
-/* .AiAgri{
-    background:linear-gradient(to right, yellow,rgb(239, 235, 235),orange);
-    color: transparent;
-    width: max-content;
-    background-clip: text;
-} */
 body{
-    /* background: linear-gradient(to top,black,green,orange,black);
-    background-repeat: no-repeat;  */
     background-color: #80cbc4;
-
-    /* background-color: hsl(84, 100%, 23%); */
 }
 .sheldon{
 background-image: url('src/assets/backkk.png');   
