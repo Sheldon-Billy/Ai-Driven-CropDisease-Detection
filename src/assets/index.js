@@ -20,7 +20,10 @@ import youtube from "./youtube.png"
 import discord from "./discord.png"
 import facebook from "./facebook.png"
 import github from "./github.png"
+import maizewoman from "./maize-woman.jpeg"
+import clearmaize from "./clear-maizelets.jpg"
+
 
 export { background1, digit, smartleaf };
-export { background2, cardcomp1, cardcomp2, backkk, insight, ai, leaf, mobile, knowmore };
-export { google, whatsapp, telegram, instagram, twitter, tiktok, youtube, discord, github, facebook }
+export { background2, cardcomp1, cardcomp2, backkk, insight, ai, leaf, mobile, knowmore, clearmaize, };
+export { google, whatsapp, telegram, instagram, twitter, tiktok, youtube, discord, github, facebook, maizewoman }

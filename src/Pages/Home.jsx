@@ -1,16 +1,30 @@
 import React from "react";
 import { Cards } from "../Components/Cards";
 import {
-  ai, digit, background1, cardcomp1, cardcomp2, insight, knowmore, leaf, mobile,
+  ai,
+  digit,
+  background1,
+  cardcomp1,
+  cardcomp2,
+  insight,
+  knowmore,
+  leaf,
+  mobile,
+  smartleaf,
+  clearmaize,
+  maizewoman,
 } from "../assets";
 import { Informatics } from "../Components/Informatics";
 import Hscan from "../Components/Hscan";
 import { useState, useEffect } from "react";
 
 const Home = () => {
-
-
-  const TypingEffect = ({ text, speed = 100, delay = 2000, backspaceSpeed = 50 }) => {
+  const TypingEffect = ({
+    text,
+    speed = 100,
+    delay = 2000,
+    backspaceSpeed = 50,
+  }) => {
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -74,37 +88,55 @@ const Home = () => {
     {
       i: background1,
       l: "Smart Farmer Support & Advisory",
-      d:
-        "🔹Empowering the potentials of the fammers and encourage them to improve their workforce adaptabilty🔹 Community & Knowledge Sharing.",
+      d: "🔹Empowering the potentials of the farmers and encourage them to improve their workforce adaptability🔹 Community & Knowledge Sharing.",
     },
     {
       i: cardcomp1,
       l: "Prevention & Treatment Suggestions",
-      d:
-        "🔹 AI-powered Treatment Recommendations – Suggests organic, chemical, or biological treatments.",
+      d: "🔹 AI-powered Treatment Recommendations – Suggests organic, chemical, or biological treatments.",
     },
     {
       i: cardcomp2,
       l: "Real-time Monitoring & Alerts",
-      d:
-        "🔹 Continuous Crop Health Monitoring – Uses drone/satellite imagery or IoT sensors to track plant health.",
+      d: "🔹 Continuous Crop Health Monitoring – Uses drone/satellite imagery or IoT sensors to track plant health.",
     },
     {
       i: digit,
       l: "Data Collection & Research Support",
-      d:
-        "🔹 Disease Trend Analysis – Tracks disease patterns across different regions.🔹 Government & Research Collaboration – Shares insights with agricultural research institutions.",
+      d: "🔹 Disease Trend Analysis – Tracks disease patterns across different regions.🔹 Government & Research Collaboration – Shares insights with agricultural research institutions.",
+    },
+    {
+      i: digit,
+      l: "Sustainable Farming Practices",
+      d: "🔹 Promotes eco-friendly farming techniques to reduce environmental impact.🔹 Encourages crop rotation and organic farming.",
+    },
+    {
+      i: smartleaf,
+      l: "AI-Driven Yield Optimization",
+      d: "🔹 Uses predictive analytics to forecast crop yields.🔹 Provides actionable insights to maximize productivity.",
+    },
+    {
+      i: clearmaize,
+      l: "Weather-Based Insights",
+      d: "🔹 Offers real-time weather updates and forecasts.🔹 Helps farmers plan irrigation and harvesting schedules effectively.",
+    },
+    {
+      i: maizewoman,
+      l: "Remote Farm Management",
+      d: "🔹 Enables farmers to monitor and manage their farms remotely.🔹 Provides access to tools and data on mobile devices.",
     },
   ];
   return (
     <>
-      <div className="rounded-b-[10px] p-2 mx-[10px] flex flex-col items-center justify-center sheldon">
+      <div className="rounded-b-[10px] p-2 mx-[10px] flex flex-col items-center justify-center bg-[url('src/assets/backkk.png')] bg-cover bg-center">
         <h1 className="font-[Times] font-bold text-[40px] bg-gradient-to-r from-[#00b300] via-[white] to-[#00b300] text-transparent bg-clip-text  ">
           Ai-Driven Crop Disease Detection & Prevention
         </h1>
         <p className="text-white font-[Times] text-[17px] font-extrabold">
-          <TypingEffect text="Empowering Famers with real insights for higher helthier crops &
-          sustainable farming" />
+          <TypingEffect
+            text="Empowering Famers with real insights for higher helthier crops &
+          sustainable farming"
+          />
         </p>
 
         <div className="flex gap-[10px] mt-2">
@@ -128,15 +160,18 @@ const Home = () => {
       </div>
 
       <div className="flex gap-4 items-center justify-center mt-4 text-white">
-        <h2 className="bg-black p-2 rounded-2xl  hover:bg-blue-500 transition-all">Get to know more</h2>
-        <img className="h-10 w-10 hover:transform-[scale(1.3)] transition-all" src={knowmore} />
+        <h2 className="bg-black p-2 rounded-2xl  hover:bg-blue-500 transition-all">
+          Get to know more
+        </h2>
+        <img
+          className="h-10 w-10 hover:transform-[scale(1.3)] transition-all"
+          src={knowmore}
+        />
       </div>
 
-      <div className="grid grid-cols-4 gap-2  text-white my-[10px] mx-[10px]">
+      <div className="bg-gradient-to-bl from-[#212020] via-[#9d9797] to-[#232222] grid grid-cols-4 gap-2  text-white my-[10px] mx-[10px]">
         {cards.map(({ i, l, d }) => {
-          return (
-            <Cards key={i} image={i} labelee={l} description={d} />
-          );
+          return <Cards key={i} image={i} labelee={l} description={d} />;
         })}
       </div>
     </>

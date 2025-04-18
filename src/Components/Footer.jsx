@@ -13,7 +13,7 @@ const Footer = () => {
 
 
     return (
-        <div className='bg-[#000030] mt-20'>
+        <div className='bg-[#000030]'>
             <div className='text-white h-[13rem]  grid grid-cols-4 mx-[200px]'>
 
                 <div className='text-white my-5 mx-5 flex flex-col justify-center items-center'>
